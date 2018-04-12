@@ -180,7 +180,8 @@ header .social{
 	padding-top: 30px;
 	display: flex;
 	justify-content: space-between;
-	width: 940px;
+	width: 90%;
+	max-width: 940px;
 	margin: 0 auto;
 	color: #666767;
 }
@@ -193,17 +194,13 @@ header .social{
 	height: auto;
 }
 .article p{
-	height: 200px;
+	//height: 200px;
 }
 .blog {
-	//padding-top: 50px;
 	display: flex;
 	flex-direction: column;
 }
 
-.blog>div{
-	//height: 200px;
-}
 .blog>div img{
 	border-radius: 3px;
 	float: left;
@@ -249,7 +246,7 @@ header .social{
 	flex-direction: column;
 }
 .avatar, .description{
-	width: 30%;
+	width: 40%;
 	text-align: center;
 	color: #fff5f5
 }
@@ -278,8 +275,41 @@ footer{
 @media all and (max-width: 720px){
 	.gallery-container{
 	grid-template-columns: 1fr 1fr 1fr;
-	} 
+	grid-auto-rows: 170px;
+	}
+	.img-container:nth-child(9){
+	background-image: url(img-photo/photo-9.png);
+	grid-column:1/4;
+	}
 	.img-container:nth-child(10){
 	grid-column:2/4;
 	grid-row:3/4;
+	}
+	.citate blockquote{
+	padding:100px 40px;
+}
+
+}
+@media all and (max-width: 550px){
+	.header-bg p, .header-bg h1{
+	left: 10%;
+	}
+
+	.citate blockquote{
+	padding:90px 10px;
+	}
+	.news-wrapper{
+		flex-direction: column;
+	}
+	.article, .blog{
+		width: 90%;
+		margin: 0;
+	}
+	.person{
+		flex-direction: column;
+		align-items: center;
+	}
+	.avatar, .description{
+	width: 90%;
+	}
 }
