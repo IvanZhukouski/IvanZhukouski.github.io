@@ -4,7 +4,11 @@
 <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style-photo.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="script/fm.revealator.jquery.js"></script>
+<link rel="stylesheet" type="text/css" href="style/fm.revealator.jquery.css">
+<script type="text/javascript" src="script/script.js"></script>
 <title>Portfolio</title>
 </head>
 <body>
@@ -14,9 +18,12 @@
 			<p>Professional portrait</p>
 		</div>
 		<div class="header-menu">
-			
+			<div class="menu">
+					<span class="menu-open">MENU</span>
+				</div>
 			<nav>
-				<ul>
+				
+				<ul class="menu-links">
 					<li><a href="#" class="menu-link">Work</a></li>
 					<li><a href="#" class="menu-link">News</a></li>
 					<li><a href="#" class="menu-link">About</a></li>
@@ -49,9 +56,12 @@
 				<div class="img-container"></div>
 			</div>
 		</div>
+		 <div class="photo-large">
+      		<span class="closeGallery">CLOSE</span>
+   		 </div>
 
 		<div class="citate">
-			<blockquote>
+			<blockquote class="revealator-zoomin revealator-once">
 				&quot;Fashion is not something that exists in dresses only. Fashion is in the sky, in the street, fashion has to do with ideas, the way we live, what is happening.&quot;<br><br>
 				Coco Chanel 
 			</blockquote>
@@ -91,11 +101,12 @@
 			</div>
 		</div>	
 		<div class="brands">
-			
+		<img class="revealator-slideright" src="img-photo/brands.png" alt="" style="width: 80%; height: auto;">
+			 
 		</div>	
 		<div class="about">
 			<h2>About</h2>
-			<div class="person">
+			<div class="person revealator-zoomin revealator-once">
 				<div class="avatar">
 					<h3>John Smits</h3>
 					<img src="img-photo/avatar.png" style="width: 100px;height: auto;border-radius: 50%; background-color: white; padding: 20px; margin-bottom: 20px" alt="">
@@ -106,7 +117,7 @@
 						<a href="#" class="social-link"></a>
 					</div>	
 				</div>
-				<div class="description">
+				<div class="description revealator-zoomin revealator-once">
 					<h3>Photograph</h3>
 					<p>If you are a picture editor, creative director, or someone who routinely hires photographers, please reach out to hello@womenphotograph.com for a complete electronic database of our members, which includes much more detailed information regarding geographical areas of expertise, languages spoken, hostile environment training experience, and contact information.</p>
 				</div>
