@@ -42,7 +42,8 @@ h2, .gallery p{
 .header-menu{
 	position: relative;
 	display: flex;
-	justify-content: right;
+	justify-content: space-between;
+	align-items: center;
 	height: 100px;
 	background-color: #252222;
 }
@@ -51,31 +52,34 @@ h2, .gallery p{
 	font-weight: bold;
 	font-size: 20px;
 	cursor: pointer;
-	position: absolute;
-	left:5%;
-	top: 40px;
+	margin-left: 50px;
+	align-items: center;
 }
 .menu:hover{
 	color: #ccc;
 }
-nav{
-	height: 100%;
+/*nav{
 }
+nav li{
+	margin: 0;
+}*/
 nav ul{
-	position: relative;
 	margin:0;
 	list-style: none;
 	display: flex;
-	height: 100%;
+	width: 250px;
+	padding: 0;
+	justify-content: space-between;
 	align-items: center;
 }
+nav{
+	margin: 0px;
+	padding: 0px;
+}
 .menu-link {
-	left: -350px;
-	top: 40px;
-	//position: absolute;
 	display: none;
 	text-decoration: none;
-	margin-right: 20px;
+	padding: 0;
 	color: #fff5f5;
 	font-size: 20px;
 }
@@ -89,17 +93,14 @@ nav ul a:hover{
 }
 .social{
 	display: flex;
-	height: 100%;
-	align-items: center;
-}
-header .social{
-	margin: 0 50px;
+	width: 200px;
+	justify-content: space-between;
+	margin-right: 50px;
 }
 .social-link{
 	display: block;
 	width: 35px;
 	height: 36px;
-	margin-right: 20px;
 	background-image: url(img-photo/social.png);
 }
 .social-link:nth-child(2){
@@ -348,7 +349,7 @@ footer{
 }
 
 @media all and (max-width: 720px){
-	header .social{
+	header .social, .menu{
 	margin: 0;
 	}
 	.gallery-container{
@@ -374,13 +375,13 @@ footer{
 	left: 10%;
 	}
 	.header-menu{
+		padding: 5px 0;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 	}
-	.menu{
-		position: static;
-		left: 0;
+	.menu, .social{
+		margin: 0;
 	}
 
 	.citate blockquote{
