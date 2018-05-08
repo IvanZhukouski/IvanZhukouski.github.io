@@ -370,7 +370,7 @@ footer{
 
 }
 
-@media all and (max-width: 550px){
+@media all and (max-width: 550pxcd){
 	.header-bg p, .header-bg h1{
 	left: 10%;
 	}
