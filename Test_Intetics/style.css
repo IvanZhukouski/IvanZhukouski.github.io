@@ -59,6 +59,8 @@ main{
 
 .company-description{
 	margin-bottom: 50px;
+	font-size: 18px;
+	//font-weight: 550;
 }
 
 footer{
@@ -67,8 +69,9 @@ footer{
 	height: 70px;
 	background-color:#F8F8F8;
 	display: flex;
+	//flex-wrap: wrap;
 	align-items: center;
-	padding: 0 30px;
+	padding: 0 50px;
 	justify-content: space-between;
 }
 
@@ -77,6 +80,7 @@ footer{
 	height: 25px;
 	width: 90px;
 	text-align: center;
+	font-weight: 600;
 	background-color: #FE9152;
 	text-decoration: none;
 	border-radius: 25px;
