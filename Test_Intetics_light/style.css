@@ -49,6 +49,7 @@ main{
 }
 
 .vacancy li{
+	list-style-position: inside;
 	margin-top: 2px;
 }
 

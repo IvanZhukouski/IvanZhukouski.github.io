@@ -54,6 +54,7 @@ main{
 	padding: 50px;
 	border-radius: 5px;
 	width: 70%;
+	max-width: 1000px;
 	margin: auto;
 }
 
