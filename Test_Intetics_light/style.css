@@ -31,18 +31,21 @@ main{
 	color: #333333;
 	font-size: 17px;
 	padding: 50px 0;
-	background-image: url(img/bg_white_clouds.png);
+	background-image: url(img/bg_clouds.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	background-color: #ffF1F1;
+	background-color: #fff;
 	
 }
 
 .vacancy{
-	background-color: rgba(255, 150, 220, 0.1)
+	//background-color: rgba(255, 150, 220, 0.1)
 }
-
+.vacancy h2{
+	color: #FE9152;
+	font-weight: normal;
+}
 .vacancy ul{
 	list-style: none;
 	margin-top: 50px;
