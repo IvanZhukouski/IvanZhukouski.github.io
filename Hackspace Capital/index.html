@@ -5,17 +5,24 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
+	<script type="text/javascript" src="script/fm.revealator.jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/fm.revealator.jquery.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script/fm.revealator.jquery.js"></script>
+	<script type="text/javascript" src="script/script.js" ></script>
 </head>
 <body>
 
 	<header>
-		<div class="logo-wrapper">
+		<div class="logo-wrapper ">
 			<div class="logo">portfolio<span>hackspase capital</span></div>
 			<div class="lang-container">
 				<a href="#" class="lang lang-active"><span>ru</span></a>
 				<a href="#" class="lang"><span>eng</span></a>
 			</div>
+			
 		</div>
+
 		<nav>
 			<ul class="menu">
 				<li class="menu-item menu-active"><a href="#">med tech</a></li>
@@ -30,6 +37,27 @@
 						<span class="squares"></span>
 				</li>
 			</ul>
+			<div class="mobile"><!-- Mobile style menu -->
+				<div class="menu-hamburger">
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				</div>
+				<ul class="mobile-menu">
+					<li class="menu-item menu-active"><a href="#">med tech</a></li>
+					<li class="menu-item"><a href="#">aerospace</a></li>
+					<li class="menu-item"><a href="#">gadgets</a></li>
+					<li class="menu-item"><a href="#">energy</a></li>
+					<li class="menu-item"><a href="#">agriculture</a></li>
+					<li class="menu-item"><a href="#">new materials</a></li>
+					<!-- <li>
+							<span class="squares"></span>
+							<span class="squares"></span>
+							<span class="squares"></span>
+					</li> -->
+				</ul>
+			</div>
 		</nav>
 
 	</header>
@@ -37,41 +65,47 @@
 	<main>
 		<div class="content">
 			<div class="item">
-				<span>clever case</span>
+				<span class="name">clever case</span>
+				<span class="learn-more">learn more</span>
 				<div class="img-container">
 					<img src="img/clever_case.png" alt="image">
 				</div>
 			</div>
 
 			<div class="item">
-				<span>smart cup</span>
+				<span class="name">smart cup</span>
+				<span class="learn-more">LEARN MORE</span>
 				<div class="img-container">				
 					<img src="img/smart_cup.png" alt=image"">
 				</div>
 			</div>
 			
 			<div class="item">
-				<span>smart pourer</span>
+				<span class="name">smart pourer</span>
+				<span class="learn-more">LEARN MORE</span>
 				<div class="img-container">
 					<img src="img/smart_pourer.png" alt="image">
 				</div>
 			</div>
-			<div class="item">
-				<span>clever case</span>
+			<div class="item revealator-slideup revealator-once revealator-delay3">
+				<span class="name">clever case</span>
+				<span class="learn-more">LEARN MORE</span>
 				<div class="img-container">
 					<img src="img/clever_case2.png" alt="image">
 				</div>
 			</div>
 
-			<div class="item">
-				<span>smart cup</span>
+			<div class="item item revealator-slideup revealator-once revealator-delay#">
+				<span class="name">smart cup</span>
+				<span class="learn-more">LEARN MORE</span>
 				<div class="img-container">
 					<img src="img/smart_cup2.png" alt="image">
 				</div>
 			</div>
 			
-			<div class="item">
-				<span>smart pourer</span>
+			<div class="item item revealator-slideup revealator-once revealator-delay2">
+				<span class="name">smart pourer</span>
+				<span class="learn-more">LEARN MORE</span>
 				<div class="img-container">
 					<img src="img/smart_pourer2.png" alt="image">
 				</div>
