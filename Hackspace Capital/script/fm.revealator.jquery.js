@@ -35,7 +35,7 @@ $(function () {
 		timer:           null,
 		busy:            false,
 		scroll_padding:  -500,
-		effects_padding: -200,
+		effects_padding: -280,
 		refresh:         function () {}
 	}, typeof Revealator !== 'undefined' ? Revealator : {});
 
