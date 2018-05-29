@@ -1,0 +1,164 @@
+ @font-face {
+    font-family: Ubuntu;
+    src: url(fonts/3969.ttf);
+    src: local(ubuntu), url(fonts/3969.ttf);
+	}
+
+
+html{
+	margin: 0;
+	//background-image: url(img/site.png);
+	//opacity: 0.2;
+}
+
+
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: ubuntu;
+	background-image: url(img/main_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-position: center;*/
+	background-attachment: fixed;
+	background-color: #020202;
+	color:#ffffff;
+}
+header, main{
+	max-width: 1033px;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+main{
+	margin-bottom: 150px;
+	margin-top: 46px;
+}
+.logo-wrapper{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 81px;
+	margin-top: 118px
+}
+.logo, .item{
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}
+.logo {
+	font-size: 20px;
+}
+.logo span{
+	color: #e7353d;
+}
+.lang{
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+	height: 28px;
+	width: 28px;
+	border: 1px solid #ffffff;
+	text-align: center;
+	line-height: 28px;
+	display: none;
+}
+.lang-active{
+	display: block;
+}
+
+.menu{
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+
+.menu li{
+	margin-right: 51px;
+}
+.menu li:last-child{
+	margin-right: 0;
+}
+.menu a:before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #e7353d;
+	left:-14px;
+	top: 2px;
+
+}
+.menu-item a{
+	text-transform: uppercase;
+	position: relative;
+	text-decoration: none;
+	font-size: 14px;
+	color: #a7a7a7;
+}
+.menu-active a{
+	font-weight: bold;
+	color: #ffffff;
+}
+.menu-active a:before{
+	background-color: #e7353d;
+}
+.squares{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #e7353d;
+}
+.item span{
+	font-size: 28px;
+}
+.img-container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+
+}
+.img-container img{
+	width: 110%;
+	height: auto;
+	transform: translateY(-50%);
+	top: 50%; 
+	position: absolute;
+	display: block;
+	margin: auto auto;
+}
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.item{
+	width: 343px;
+	height: 242px;
+	background-color: #DCDAE0;
+	position: relative;
+	margin-top: 39px;
+}
+.item:nth-child(3){
+}
+.item span{
+	z-index: 1;
+	position: absolute;
+	top:-24px;
+}
+@media all and (max-width: 1080px){
+
+	.content{
+		justify-content: center;
+	}
+	.item:nth-child(2n){
+		margin-left: 3px;
+	}
+}
