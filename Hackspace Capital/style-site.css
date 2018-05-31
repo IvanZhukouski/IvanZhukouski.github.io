@@ -78,7 +78,7 @@ header{
 .lang-active{
 	display: block;
 }
-/*.photo-project{
+.photo-project{
 	//height: 408px;
 	color: #000000;
 	background-color: #DAD9E3;
@@ -86,7 +86,7 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	overflow: hidden;
-}*/
+}
 /*.photo-name-wrapper{
 	display: flex;
 	justify-content: center;
