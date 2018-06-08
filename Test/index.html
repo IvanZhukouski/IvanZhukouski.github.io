@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kamako</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="top-banner">
+			<p>КАМАКО-ведущий производитель майонезов, соусов и кетчупов в беларуси на протяжении 20 лет</p>
+			<img src="img/close.png" class="close">
+		</div>
+		<nav> 
+			<div class="menu-mobile">
+			      <span></span>
+			      <span></span>
+			      <span></span>
+			      <span></span>
+			</div>
+			<img src="img/logo.png" alt="logo" class="logo">
+			<ul class="menu">
+				<li class="menu-item"><a class="menu-active" href="#">О компании</a></li>
+				<li class="menu-item"><a href="#">Продукция</a></li>
+				<li class="menu-item"><a href="#">Благотворительность</a></li>
+				<li class="menu-item"><a href="#">Пресс-центр</a></li>
+				<li class="menu-item"><a href="#">Кулинарный клуб</a></li>
+				<li class="menu-item"><a href="#">Контакты</a></li>
+			</ul>
+			<div class="lang-container">
+				<a href="#" class="lang-active">РУС</a>
+				<a href="#">ENG</a>
+			</div>
+			<a href="#" class="search"></a>
+			<input type="text" name="input">
+			
+		</nav>
+	</header>
+		<main>
+  			<span class="slogan">Пусть всегда будет вкусно!</span>
+
+				<div class="mySlides fade">
+					<div class="banner">
+						<span class="banner-header">Кулинарный клуб</span>
+						<span class="banner-slogan">Создай свой кулинарный шедевр вместе с соусами Камако</span>
+						<a class="learn-more" href="#">Узнать больше</a>
+					</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="banner">
+						<span class="banner-header">Кулинарный клуб</span>
+						<span class="banner-slogan">Камако слайд 2</span>
+						<a class="learn-more" href="#">Узнать больше</a>
+					</div>
+				</div>
+				<div class="mySlides fade">
+					<div class="banner">
+						<span class="banner-header">Кулинарный клуб</span>
+						<span class="banner-slogan">Камако слайд 3</span>
+						<a class="learn-more" href="#">Узнать больше</a>
+					</div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<br>
+
+				<div class="dot-container" style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div> 
+			</div>
+		</main>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+};
+
+setInterval(plusSlides,7500,1)
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+$(".menu-mobile").click(function(){
+        $('.menu').toggleClass('menu-open');
+        //$('.menu').slideToggle();
+		$('.menu-mobile').toggleClass('menu-close');});
+$(".close").click(function(){
+        $('.top-banner').slideUp();});
+$(".search").click(function(){
+        $('input').slideToggle();});
+</script>
+
+</body>
+</html>

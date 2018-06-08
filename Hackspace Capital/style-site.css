@@ -56,10 +56,14 @@ header{
 	border-bottom-color: transparent;
 
 }
+.icon{
+	height: 45px;
+}
 .category{
 	margin-left: 60px;
 	display: flex;
-	align-items: center;
+	align-items: center;height: 50px;
+	
 }
 .category-name{
 	margin-left: 11px;
