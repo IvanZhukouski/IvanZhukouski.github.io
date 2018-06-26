@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		 navigation: true,
 		 scrollOverflow: true,
-		 scrollOverflowReset: true,
+		 //scrollOverflowReset: true,
 		 scrollingSpeed: 900,
 		anchors:['firstPage', 'secondPage', 'thirdPage']
 	});
@@ -20,13 +20,23 @@ $(document).ready(function() {
 
 		$(this).closest('.gallery').find("img").attr("src","img/"+(n)+".png")
 		$(this).closest(".gallery").find('.counter-number').html(n)
-		//$(this).closest('.gallery').find("img").css("opacity","0.2");
-		
-		// function change(arrow){
-		// 	(arrow.closest('.gallery').find("img").attr("src","img/"+(n)+".png"))
-		// }
-		// var i = $(this)
-		// setTimeout(change(i), 1000);
-		//$(this).closest('.gallery').find("img").css("opacity","1");
 	});
+	$(".how-works").click(function(){
+		$(".video").show(400);
+	})
+	$(document).on('click', function(e) {
+		  if (!$(e.target).closest(".how-works").length) {
+		    $('.video').slideUp();
+		  }
+		  e.stopPropagation();
+		});
+	$(".backcall").click(function(){
+		$("form").slideToggle(400);
+	});
+	$(document).on('click', function(e) {
+		  if (!$(e.target).closest(".phone").length) {
+		    $('form').slideUp();
+		  }
+		  e.stopPropagation();
+		});
 });

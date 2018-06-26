@@ -31,6 +31,21 @@
 body{
 	font-family: Raleway;
 }
+.video{
+	display: none;
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+}
+iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 .menu{
 	background-color: #fff;
 	position: fixed;
@@ -115,6 +130,9 @@ body{
 	justify-content: space-between;
 	padding: 40px 100px 0 130px ;
 }
+.phone{
+	position:relative;
+}
 .phone span{
 	color: #fff;
 	font-size: 17px;
@@ -131,10 +149,49 @@ body{
 .phone .backcall:hover{
 	transform: scale(1.04);
 }
+.phone form{
+	display: none;
+	position: absolute;
+	top: 60px;
+	right: -20px;
+}
+.phone label{
+	color: #fff;
+	float: right;
+}
+.phone input{
+	margin-top: 10px;
+	border-radius: 3px;
+	border:none;
+	background-color: rgba(255,255,255,0.5);
+	height: 30px;
+	width: 200px;
+}
+.phone input:focus{
+	background-color: rgba(255,255,255,0.8);
+}
+.phone button{
+	height: 30px;
+	margin-top: 20px;
+	float: right;
+	cursor: pointer;
+	border-radius: 3px;
+	border: 1px solid #777/*#272630*/;
+	box-shadow: none;
+	background-color: #464649;
+	color: #ccc;
+	//font-weight: 600;
+}
+.phone button:hover{
+	background-color: #333;
+}
+button:active{
+	box-shadow: inset -0px -0px 2px 0px #aaa;
+}
 .slogan{
 	width: 855px;
 	margin-left: 130px;
-	margin-top: 125px;
+	margin-top: 120px;
 }
 .slogan span:nth-child(1){
 	color:#1fbc78;
@@ -142,13 +199,15 @@ body{
 	font-weight: 800;
 }
 .slogan span:nth-of-type(2){
+	display: inline-block;
 	color:#fff;
 	font-size: 56px;
 	font-weight: 800;
+	margin-top: 20px;
 }
 .benefits{
 	display: flex;
-	margin:140px 0 0 130px;
+	margin:125px 0 0 130px;
 }
 .benefits span{
 	width: 253px;
@@ -215,13 +274,13 @@ body{
 	background-image: url(img/jump.png);
 	background-size: cover;
 	height: 100vh;
-	width: 50%;
+	width: 49%;
 	cursor: pointer;
 }
 .how-works img{
 	width: 77px;
 	height: auto;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 .how-works span{
 	font-size: 15px;
@@ -229,40 +288,42 @@ body{
 	color: #fff;
 }
 .description{
-	width: 38%;
+	width: 40%;
 	float: right;
 	height: 100vh;
-	margin-left: 50px;
+	margin-left: 45px;
 }
 .slogan-2{
-	width: 100%;
+	width: 90%;
 }
 .description span{
 	display: inline-block;
 }
 .description span:nth-child(1){
-	margin-top: 110px;
+	margin-top: 100px;
 	font-size: 48px;
 	font-weight: 700;
 }
 .description span:nth-of-type(2){
-	margin-top: 60px;
+	margin-top: 46px;
+	line-height: 31px;
 	font-size: 21px;
 	font-weight: 400;
 
 }
 .space-block{
 	display: flex;
-	margin-top: 67px;
+	margin-top: 107px;
 }
 .space-block div:nth-child(1){
 	margin-right: 20px;
+	margin-left: 15x
 }
 .space-block div{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 256px;
+	width: 296px;
 	height: 196px;
 	background-color: #f2f2f2;
 }
@@ -289,7 +350,7 @@ body{
 }
 .fun{
 	width: 1058px;
-	margin: 80px auto 0 auto;
+	margin: 68px auto 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -333,12 +394,12 @@ body{
 	background-color: #eee;
 }
 .counter{
-	font-size: 11px;
+	font-size: 13px;
 	color: #b9b9b9;
 	transform: rotate(-90deg);
 	transform-origin: left top;
-	top: 40px;
-	left: -38px;
+	top: 45px;
+	left: -45px;
 }
 .counter span:nth-child(1){
 	font-weight: 600;
@@ -349,11 +410,11 @@ body{
 	color: #b9b9b9;
 	transform: rotate(-90deg);
 	transform-origin: top right;
-	right: -30px;
+	right: -25px;
 	bottom: 73px;
 }
 .gallery-description{
-	margin: 22px auto 0 auto ;
+	margin: 12px auto 0 auto ;
 	width: 265px;
 	text-align: center;
 	font-size: 18px;
@@ -376,13 +437,18 @@ body{
 }
 
 .tz{
-	height: 380px;
+	height: 280px;
 	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #fff;
+	font-size: 20px;
 	background-color: #303030;
 }
 
 .fp-scroller, .iScrollIndicator{
-	transition-duration: 0.3s!important;
+	transition-duration: 0.5s!important;
 	transition-timing-function: ease-in-out!important;
 }
 .fp-viewing-secondPage #fp-nav ul li span{
@@ -397,6 +463,9 @@ body{
 	}
 	.slogan, .benefits{
 		margin-top: 100px;
+	}
+	.space-block{
+		margin-top: 60px;
 	}
 }
 @media all and (max-width: 1024px){
@@ -455,11 +524,87 @@ body{
 	.text{
 		margin-left: 40px;
 	}
+	.wrapper{
+		margin-left: 55px;
+	}
 	.menu{
-		width: 50px;
+		width: 55px;
 	}
 }
 @media all and (max-width: 768px){
+	.logo-phone img{
+		width: 100px;
+	}
+	.phone span{
+		font-size: 14px;
+	}
+	.phone span:nth-of-type(2){
+		font-size: 10px;
+	}
+	.slogan{
+		margin:20px 10px 10px 60px;
+		width: 80%;
+		text-align: center;
+	}
+	.slogan span:nth-child(1){
+		font-size: 18px;
+	}
+	.slogan span:nth-of-type(2) {
+    font-size:22px;
+	}
+	.benefits{
+		margin: 40px 0 0 60px;
+	}
+	.benefits span {
+		width: 190px;
+	}
+	.button{
+		right: 30px;
+	}
+	.logo-phone{
+		padding: 10px 10px 0px 60px;
+	}
+	.wrapper{
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	#fp-nav{
+		display: none;
+	}
+	.how-works{
+		height: 50vh;
+		width: 100%;
+	}
+	 .description{
+		width: 90%;
+		margin-left: 10px;
+	}
+	
+	.description span{
+		text-align: center;
+		font-size: 16px!important;
+	}
+	.slogan-2{
+		text-align: center;
+	}
+	.slogan-2 span:nth-child(1){
+		font-size: 25px;
+		margin-top: 20px;
+	}
+	.slogan-2 span:nth-of-type(2){
+		font-size: 20px;
+		margin-top: 20px;
+	}
+	.space-block div{
+		height: auto;
+	}
+	.how-it-was{
+		font-size: 30px;
+	}
+	.fun{
+		margin-top: 20px;
+	}
 	.gallery{
 		width: 70%;
 	}
@@ -477,5 +622,11 @@ body{
 		font-size: 24px;
 		width: 70%;
 
+	}
+	.counter{
+		left:-15px;
+	}
+	.tz{
+		flex-direction: column;
 	}
 }
