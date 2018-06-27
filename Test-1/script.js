@@ -6,6 +6,16 @@ $(document).ready(function() {
 		 scrollingSpeed: 900,
 		anchors:['firstPage', 'secondPage', 'thirdPage']
 	});
+	$(".menu-wrapper").click(function(){
+		$(".menu-sidebar").toggleClass("menu-active");
+		//$(".menu-sidebar").slideToggle()
+	});
+	$(document).on('click', function(e) {
+		  if (!$(e.target).closest(".menu-wrapper").length) {
+		    $('.menu-sidebar').removeClass("menu-active");
+		  }
+		  e.stopPropagation();
+		});
 	var n = 1;
 	$(".left").click(function(){
 		n--;

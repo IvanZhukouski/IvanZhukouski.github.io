@@ -64,8 +64,65 @@ iframe{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 45px;
+	//margin-top: 45px;
 	position: relative;
+	padding-top: 45px;
+	height: 120px;
+	background-color: #fff;
+	z-index: 2;
+}
+.menu-sidebar{
+	top: 1px;
+	border: 1px solid #eee;
+	left: -279px;
+	position: absolute;
+	font-size: 16px;
+	width: 250px;
+	background-color: #fff;
+	transition: all 0.6s;
+	z-index: 1;
+}
+.menu-active{
+	transform: translateX(358px);
+
+}
+.menu-sidebar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.menu-sidebar li{
+	box-sizing: border-box;
+	width: 100%;
+	border-top: 2px solid #eee;
+	padding:0 0 0 20px;
+}
+.menu-sidebar li:hover{
+	background-color: #eee;
+}
+.menu-sidebar li:first-child{
+	border:none;
+}
+.menu-sidebar ul li a{
+	text-decoration: none;
+	display: inline-block;
+	height: 37px;
+	padding-top: 18px;
+	color: #a3a3a3;
+}
+.menu-sidebar ul li a:after{
+	content: "";
+	display: block;
+	width: 100%;
+	opacity: 0;
+	height: 1px;
+	transform: translateY(5px);
+	background-color: #a3a3a3;
+	transition: all 0.3s;
+}
+.menu-sidebar ul li:hover a:after{
+	transform: translateY(0);
+	opacity: 0.8;
 }
 .menu-wrapper span{
 
@@ -469,6 +526,10 @@ button:active{
 	}
 }
 @media all and (max-width: 1024px){
+	.menu-active{
+		transform: translateX(335px);
+
+	}
 	.slogan, .benefits{
 		margin-top: 20px;
 	}
