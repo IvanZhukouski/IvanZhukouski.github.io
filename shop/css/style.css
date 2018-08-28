@@ -582,6 +582,7 @@ body {
 }
 .search-wrapper .search  form{
     position: relative;
+    display: flex;
 }
 .search-wrapper .search input,
 .search-wrapper .search select{
